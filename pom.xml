@@ -15,7 +15,7 @@
 	<description>Mockito test api rest</description>
 
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>11</java.version>
 	</properties>
 
 	<dependencies>
@@ -87,6 +87,11 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.19.1</version>
+			</plugin>
 		</plugins>
 	</build>
 
@@ -120,5 +125,9 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
+
+
+
+
 
 </project>
